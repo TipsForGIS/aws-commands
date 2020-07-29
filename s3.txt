@@ -1,0 +1,8 @@
+For S3
+
+aws s3 mb s3://my-data --> create a new bucket
+aws s3 rb s3://my-data --> remove a bucket
+aws s3 rb s3://my-data --force --> remove a bucket and its contents if it is not empty
+aws s3 ls --> list all buckets on account
+aws s3 cp ./sample.txt s3://my-data --> copy a file to a bucket
+aws s3 cp . s3://my-data --recursive --> copy all files and folders on current folder to the bucket
